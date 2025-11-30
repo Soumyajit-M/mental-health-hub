@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Diagrams</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <h1>Project Diagrams</h1>
+
+    <h2>DFD Level 0</h2>
+    <div class="mermaid">
+        graph TD;
+            A[User] --> B[Mental Health Hub Application];
+            B --> C[Resources Data Store];
+            B --> D[Chat Data Store];
+    </div>
+
+    <h2>DFD Level 1</h2>
+    <div class="mermaid">
+        graph TD;
+            A[User] --> B[Fetch Resources];
+            A --> C[Send Message];
+            A --> D[Post to Forum];
+            B --> E[Resources Data Store];
+            C --> F[Chat Data Store];
+            D --> F;
+    </div>
+
+    <h2>DFD Level 2</h2>
+    <div class="mermaid">
+        graph TD;
+            A[User] --> B[API Request: /api/resources];
+            A --> C[Socket Emit: newMessage];
+            A --> D[Form Submit: Forum Post];
+            B --> E[Server: Express Route];
+            E --> F[Resources Array];
+            C --> G[Socket.io Handler];
+            G --> H[Chat Messages Array];
+            D --> I[DOM Update];
+            I --> H;
+    </div>
+
+    <h2>ER Diagram</h2>
+    <div class="mermaid">
+        erDiagram
+            USER ||--o{ MESSAGE : posts
+            RESOURCE ||--|| RESOURCE_DETAIL : has
+            MESSAGE {
+                string text
+                boolean isOwn
+            }
+            RESOURCE {
+                int id
+                string title
+                string description
+            }
+            RESOURCE_DETAIL {
+                string contact
+                string link
+            }
+    </div>
+
+    <h2>Class Diagram</h2>
+    <div class="mermaid">
+        classDiagram
+            class Server {
+                +handleConnections()
+                +registerRoutes()
+            }
+            class Client {
+                +loadResources()
+                +sendMessage()
+                +displayMessages()
+            }
+            Server --> Client : communicates
+    </div>
+
+    <h2>Gantt Chart</h2>
+    <div class="mermaid">
+        gantt
+            title Project Schedule (Week-based)
+            dateFormat YYYY-MM-DD
+            section Week 1-2
+            Setup and Backend Development :done, 2023-01-01, 14d
+            section Week 3-4
+            Frontend Development          :active, 2023-01-15, 14d
+            section Week 5
+            Testing and Deployment        :2023-02-01, 7d
+    </div>
+
+    <h2>PERT Chart</h2>
+    <div class="mermaid">
+        graph TD;
+            A[Start] --> B[Backend Setup];
+            A --> C[Frontend Setup];
+            B --> D[API Development];
+            C --> E[UI Development];
+            D --> F[Integration];
+            E --> F;
+            F --> G[Testing];
+            G --> H[Deployment];
+            H --> I[End];
+    </div>
+</body>
+</html>
