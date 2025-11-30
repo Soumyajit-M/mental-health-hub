@@ -34,11 +34,161 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static files from public directory
 app.use(express.static('public'));
 
-// Simulated support resources
+// Mental Health Support Resources - India & International
 let resources = [
-  { id: 1, title: 'Crisis Hotline', description: '24/7 support for mental health crises', contact: '1-800-HELP-NOW' },
-  { id: 2, title: 'Online Therapy', description: 'Connect with licensed therapists online', link: 'https://example.com/therapy' },
-  { id: 3, title: 'Support Groups', description: 'Join community support groups', link: 'https://example.com/groups' }
+  // Emergency Crisis Helplines (India)
+  { 
+    id: 1, 
+    title: 'Vandrevala Foundation Crisis Helpline', 
+    description: '24/7 mental health crisis support in India - Free & Confidential', 
+    contact: '1860-2662-345 or 1800-2333-330',
+    category: 'Crisis Helpline'
+  },
+  { 
+    id: 2, 
+    title: 'KIRAN Mental Health Helpline', 
+    description: '24/7 toll-free mental health rehabilitation helpline by Govt. of India', 
+    contact: '1800-599-0019',
+    category: 'Crisis Helpline'
+  },
+  { 
+    id: 3, 
+    title: 'iCall Psychosocial Helpline', 
+    description: 'Email & telephone counseling service by TISS Mumbai (Mon-Sat, 8 AM - 10 PM)', 
+    contact: '9152987821',
+    link: 'https://icallhelpline.org',
+    category: 'Crisis Helpline'
+  },
+
+  // Online Therapy Platforms (India)
+  { 
+    id: 4, 
+    title: 'Practo Online Therapy', 
+    description: 'Connect with 1000+ verified psychiatrists & psychologists online. Video/chat consultations available', 
+    link: 'https://www.practo.com/consult/psychiatrist',
+    category: 'Online Therapy'
+  },
+  { 
+    id: 5, 
+    title: 'BetterHelp India', 
+    description: 'Professional online counseling - Match with licensed therapists in 24 hours. Chat, video, phone sessions', 
+    link: 'https://www.betterhelp.com',
+    category: 'Online Therapy'
+  },
+  { 
+    id: 6, 
+    title: 'Amaha (InnerHour)', 
+    description: 'Evidence-based mental health care - Self-help tools, therapy, psychiatry consultation', 
+    link: 'https://www.amahahealth.com',
+    category: 'Online Therapy'
+  },
+  { 
+    id: 7, 
+    title: 'MindPeers', 
+    description: 'Corporate & individual mental wellness platform - 300+ therapists, coaches & psychiatrists', 
+    link: 'https://www.mindpeers.co',
+    category: 'Online Therapy'
+  },
+  { 
+    id: 8, 
+    title: 'Wysa', 
+    description: 'AI chatbot for mental health + human therapists. Available 24/7 for immediate support', 
+    link: 'https://www.wysa.io',
+    category: 'Online Therapy'
+  },
+  { 
+    id: 9, 
+    title: 'YourDOST', 
+    description: 'India\'s largest emotional wellness platform - Chat, call, or video therapy with experts', 
+    link: 'https://yourdost.com',
+    category: 'Online Therapy'
+  },
+
+  // Top Mental Health Doctors/Hospitals (India)
+  { 
+    id: 10, 
+    title: 'NIMHANS Bangalore', 
+    description: 'National Institute of Mental Health & Neuro Sciences - India\'s premier mental health institution', 
+    contact: '080-26995000',
+    link: 'https://nimhans.ac.in',
+    category: 'Top Hospitals'
+  },
+  { 
+    id: 11, 
+    title: 'AIIMS Psychiatry Department', 
+    description: 'All India Institute of Medical Sciences Delhi - Renowned psychiatry & de-addiction services', 
+    contact: '011-26588500',
+    link: 'https://www.aiims.edu/en/departments/psychiatry.html',
+    category: 'Top Hospitals'
+  },
+  { 
+    id: 12, 
+    title: 'Fortis Hospital Mental Health', 
+    description: 'Leading multi-specialty hospital chain with expert psychiatrists across India', 
+    link: 'https://www.fortishealthcare.com/specialities/psychiatry',
+    category: 'Top Hospitals'
+  },
+  { 
+    id: 13, 
+    title: 'Apollo Hospitals Mind Clinic', 
+    description: 'Comprehensive mental health services - Depression, anxiety, addiction treatment', 
+    link: 'https://www.apollohospitals.com/departments/psychiatry',
+    category: 'Top Hospitals'
+  },
+  { 
+    id: 14, 
+    title: 'Cadabams Hospitals', 
+    description: 'Specialized psychiatric hospitals & rehabilitation centers across India (Since 1991)', 
+    contact: '+91 97414 76476',
+    link: 'https://cadabamshospitals.com',
+    category: 'Top Hospitals'
+  },
+
+  // Support Groups & Communities
+  { 
+    id: 15, 
+    title: 'The Mind Clan', 
+    description: 'Online peer support community for mental health. Share experiences, join group sessions', 
+    link: 'https://www.themindclan.com',
+    category: 'Support Groups'
+  },
+  { 
+    id: 16, 
+    title: 'Mpower 1on1', 
+    description: 'Free online support groups - Depression, anxiety, LGBTQ+, women\'s mental health', 
+    link: 'https://mpowerminds.com',
+    category: 'Support Groups'
+  },
+  { 
+    id: 17, 
+    title: 'White Swan Foundation', 
+    description: 'Mental health awareness & support. Resources, stories, and community forums', 
+    link: 'https://www.whiteswanfoundation.org',
+    category: 'Support Groups'
+  },
+
+  // Self-Help Resources
+  { 
+    id: 18, 
+    title: 'Mann Talks (Shantanu Lahiri)', 
+    description: 'Leading mental health awareness platform & YouTube channel by top psychiatrist Dr. Shantanu Lahiri', 
+    link: 'https://www.youtube.com/@MannTalks',
+    category: 'Self-Help'
+  },
+  { 
+    id: 19, 
+    title: 'The Live Love Laugh Foundation', 
+    description: 'Founded by Deepika Padukone - Mental health awareness, resources & support programs', 
+    link: 'https://www.thelivelovelaughfoundation.org',
+    category: 'Self-Help'
+  },
+  { 
+    id: 20, 
+    title: 'Healthy Mind India', 
+    description: 'Free mental health resources, articles, and tools for Indian context', 
+    link: 'https://healthymindindia.com',
+    category: 'Self-Help'
+  }
 ];
 
 // Simulated chat messages
