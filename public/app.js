@@ -649,19 +649,26 @@ function addForumPost(title, content) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Initializing Mental Health Hub...');
     
-    // Initialize all features
-    initThemeToggle();
-    initNavigation();
-    loadResources();
-    loadChatMessages();
-    initChatForm();
-    initForumForm();
-    initForumSort();
+    // Hide loading overlay immediately
+    hideLoadingOverlay();
     
-    // Hide loading overlay after everything is loaded
-    setTimeout(hideLoadingOverlay, 500);
-    
-    console.log('Mental Health Hub initialized successfully');
+    try {
+        // Initialize all features
+        initThemeToggle();
+        initNavigation();
+        initChatForm();
+        initForumForm();
+        initForumSort();
+        
+        // Load async data after UI is ready
+        loadResources().catch(err => console.error('Resources error:', err));
+        loadChatMessages().catch(err => console.error('Chat error:', err));
+        
+        console.log('Mental Health Hub initialized successfully');
+    } catch (error) {
+        console.error('Initialization error:', error);
+        showToast('Error loading application. Please refresh the page.', 'error');
+    }
 });
 
 // Handle page visibility for better performance
