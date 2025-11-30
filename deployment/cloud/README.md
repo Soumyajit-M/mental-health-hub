@@ -9,17 +9,21 @@ This folder contains configuration files for deploying Mental Health Hub to vari
 ## 📁 Files Included
 
 ### 1. Procfile
+
 **For:** Render, Railway, Heroku
 
 Tells the platform how to start your application:
+
 ```
 web: node server.js
 ```
 
 ### 2. vercel.json
+
 **For:** Vercel platform
 
 Configures serverless deployment:
+
 ```json
 {
   "version": 2,
@@ -29,6 +33,7 @@ Configures serverless deployment:
 ```
 
 ### 3. DEPLOYMENT_GUIDE.md
+
 Complete step-by-step instructions for all platforms.
 
 ---
@@ -38,6 +43,7 @@ Complete step-by-step instructions for all platforms.
 ### Option 1: Render (Recommended) ⭐
 
 **Why Render:**
+
 - ✅ 750 hours/month free
 - ✅ Auto HTTPS
 - ✅ GitHub auto-deploy
@@ -65,6 +71,7 @@ Complete step-by-step instructions for all platforms.
 ### Option 2: Railway
 
 **Why Railway:**
+
 - ✅ $5 free credits/month
 - ✅ Very fast deployment
 - ✅ Simple interface
@@ -106,11 +113,13 @@ HUGGINGFACE_API_KEY=your_api_key_here
 ### Build Settings
 
 **Install Dependencies:**
+
 ```bash
 npm install --production
 ```
 
 **Start Application:**
+
 ```bash
 node server.js
 ```
@@ -119,12 +128,12 @@ node server.js
 
 ## 📊 Platform Comparison
 
-| Platform | Free Tier | Uptime | Speed | Setup | Best For |
-|----------|-----------|--------|-------|-------|----------|
-| **Render** | 750h/month | Sleep after 15min | Fast | Easy | ⭐ Demos |
-| **Railway** | $5 credits | Always on | Very Fast | Easy | Production |
-| **Vercel** | Unlimited | Always on | Fastest | Complex | Frontend |
-| **Heroku** | None (paid) | - | Good | Easy | - |
+| Platform    | Free Tier   | Uptime            | Speed     | Setup   | Best For   |
+| ----------- | ----------- | ----------------- | --------- | ------- | ---------- |
+| **Render**  | 750h/month  | Sleep after 15min | Fast      | Easy    | ⭐ Demos   |
+| **Railway** | $5 credits  | Always on         | Very Fast | Easy    | Production |
+| **Vercel**  | Unlimited   | Always on         | Fastest   | Complex | Frontend   |
+| **Heroku**  | None (paid) | -                 | Good      | Easy    | -          |
 
 **Recommendation:** Use **Render** for academic projects and demos!
 
@@ -133,6 +142,7 @@ node server.js
 ## 🔒 Security
 
 All platforms provide:
+
 - ✅ Automatic HTTPS
 - ✅ SSL certificates
 - ✅ DDoS protection
@@ -144,10 +154,12 @@ All platforms provide:
 ## 🌐 Custom Domain (Optional)
 
 ### With Render:
+
 1. **Free Plan:** Use `yourapp.onrender.com`
 2. **Paid Plan:** Add custom domain (e.g., `mentalhealthhub.com`)
 
 ### Steps:
+
 1. Buy domain (Namecheap, GoDaddy)
 2. Add in Render dashboard
 3. Update DNS records
@@ -158,12 +170,14 @@ All platforms provide:
 ## 📈 Monitoring
 
 ### Render Dashboard:
+
 - ✅ View logs in real-time
 - ✅ Check deployment status
 - ✅ Monitor resource usage
 - ✅ View request metrics
 
 ### Access Logs:
+
 ```bash
 # In Render dashboard
 Logs → View Recent Activity
@@ -177,6 +191,7 @@ Logs → View Recent Activity
 
 **Connected to GitHub:**
 Every time you push code:
+
 ```bash
 git add -A
 git commit -m "Update app"
@@ -184,6 +199,7 @@ git push
 ```
 
 **Render automatically:**
+
 1. Detects changes
 2. Rebuilds application
 3. Deploys new version
@@ -219,12 +235,14 @@ After deploying:
 ### Build Fails:
 
 **Check:**
+
 - ✅ package.json is valid
 - ✅ All dependencies listed
 - ✅ Node version compatible
 - ✅ Build logs in dashboard
 
 **Fix:**
+
 ```bash
 # Test locally first
 npm install
@@ -234,12 +252,14 @@ npm start
 ### App Won't Start:
 
 **Check:**
+
 - ✅ Start command correct
 - ✅ Port configuration (use process.env.PORT)
 - ✅ Environment variables set
 - ✅ Logs show actual error
 
 **Common Issue:**
+
 ```javascript
 // Bad (fixed port)
 const PORT = 3001;
@@ -251,11 +271,13 @@ const PORT = process.env.PORT || 3001;
 ### 502 Bad Gateway:
 
 **Causes:**
+
 - Application crashed
 - Start command wrong
 - Syntax error in code
 
 **Fix:**
+
 - Check logs
 - Fix errors
 - Redeploy
@@ -265,6 +287,7 @@ const PORT = process.env.PORT || 3001;
 ## 💰 Cost
 
 ### Render Free Tier:
+
 - **Hours:** 750/month
 - **Memory:** 512 MB
 - **Bandwidth:** 100 GB
@@ -272,12 +295,14 @@ const PORT = process.env.PORT || 3001;
 - **Cost:** $0
 
 **Good for:**
+
 - Academic projects
 - Demos
 - Testing
 - Small user base
 
 ### Upgrade ($7/month):
+
 - Always on (no sleep)
 - More resources
 - Better performance
@@ -304,6 +329,7 @@ Once deployed, access from:
 ### Include in Submission:
 
 **Deployment Info:**
+
 ```
 Deployed URL: https://mental-health-hub-xxxx.onrender.com
 Platform: Render (Free Tier)
@@ -312,12 +338,14 @@ Status: Live and Accessible
 ```
 
 **Screenshots:**
+
 - Dashboard showing deployment
 - Live URL in browser
 - Mobile view on phone
 - Logs showing activity
 
 **Presentation:**
+
 - Show live URL
 - Access on phone during demo
 - Demonstrate cloud deployment
@@ -359,6 +387,7 @@ For complete step-by-step instructions:
 **Read:** `DEPLOYMENT_GUIDE.md` in this folder
 
 Includes:
+
 - Detailed screenshots
 - Troubleshooting tips
 - Advanced configuration

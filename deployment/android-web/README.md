@@ -11,6 +11,7 @@ There are **2 ways** to use the app on your Android device:
 Deploy the app to the cloud and access from anywhere!
 
 ### Steps:
+
 1. **Deploy to Render** (see `../cloud/DEPLOYMENT_GUIDE.md`)
 2. **Get your URL** (e.g., `https://mental-health-hub.onrender.com`)
 3. **Open on Android:**
@@ -19,11 +20,13 @@ Deploy the app to the cloud and access from anywhere!
    - App loads instantly!
 
 ### Add to Home Screen (Works Like Native App):
+
 1. **Chrome:** Tap menu (⋮) → "Add to Home screen"
 2. **Firefox:** Tap menu → "Install"
 3. **Samsung Internet:** Menu → "Add page to" → "Home screen"
 
 **Benefits:**
+
 - ✅ Access from anywhere (WiFi or mobile data)
 - ✅ No PC needed
 - ✅ Share URL with friends
@@ -37,18 +40,21 @@ Deploy the app to the cloud and access from anywhere!
 Access the app running on your Windows PC from your phone.
 
 ### Requirements:
+
 - PC and phone on **same WiFi network**
 - App running on PC
 
 ### Steps:
 
 **1. Start the app on your PC:**
+
 ```
 Run START.bat from Windows deployment
 Server runs on port 3001
 ```
 
 **2. Find your PC's IP address:**
+
 ```
 Windows: Open Command Prompt
 Type: ipconfig
@@ -56,6 +62,7 @@ Look for: IPv4 Address (e.g., 192.168.1.5)
 ```
 
 **3. Access from Android phone:**
+
 ```
 Open Chrome/Firefox
 Go to: http://YOUR_PC_IP:3001
@@ -63,16 +70,19 @@ Example: http://192.168.1.5:3001
 ```
 
 **4. Bookmark it:**
+
 - Chrome: Tap star icon → "Add bookmark"
 - Or add to home screen for quick access
 
 **Benefits:**
+
 - ✅ No internet needed (local only)
 - ✅ Faster (local network)
 - ✅ Complete privacy
 - ✅ Free (no hosting costs)
 
 **Limitations:**
+
 - ⚠️ Only works on same WiFi
 - ⚠️ PC must be running
 - ⚠️ Can't access outside home
@@ -84,12 +94,14 @@ Example: http://192.168.1.5:3001
 All features work perfectly on Android:
 
 ### Fully Responsive Design
+
 - ✅ Adapts to any screen size
 - ✅ Touch-optimized buttons
 - ✅ Mobile-friendly layout
 - ✅ Swipe gestures work
 
 ### All Features Available
+
 - ✅ AI Chat Assistant
 - ✅ Real-time Support Chat
 - ✅ Community Forum
@@ -99,6 +111,7 @@ All features work perfectly on Android:
 - ✅ Online user count
 
 ### Performance
+
 - ✅ Fast loading
 - ✅ Smooth scrolling
 - ✅ Low data usage
@@ -118,6 +131,7 @@ All features work perfectly on Android:
 6. **Icon appears** on your home screen!
 
 ### What You Get:
+
 - App icon on home screen
 - Opens in full-screen (no browser UI)
 - Looks like native app
@@ -127,22 +141,23 @@ All features work perfectly on Android:
 
 ## 🌐 Comparison: Cloud vs Local
 
-| Feature | Cloud Deployment | Local Network |
-|---------|------------------|---------------|
-| **Access** | Anywhere | Same WiFi only |
-| **Internet** | Required | Not required |
-| **PC Running** | No | Yes |
-| **Speed** | Good | Faster |
-| **Sharing** | Easy (URL) | Harder |
-| **Cost** | Free tier | Free |
-| **Setup** | 5 minutes | 2 minutes |
-| **Best For** | Daily use | Testing |
+| Feature        | Cloud Deployment | Local Network  |
+| -------------- | ---------------- | -------------- |
+| **Access**     | Anywhere         | Same WiFi only |
+| **Internet**   | Required         | Not required   |
+| **PC Running** | No               | Yes            |
+| **Speed**      | Good             | Faster         |
+| **Sharing**    | Easy (URL)       | Harder         |
+| **Cost**       | Free tier        | Free           |
+| **Setup**      | 5 minutes        | 2 minutes      |
+| **Best For**   | Daily use        | Testing        |
 
 ---
 
 ## 💡 Recommended Setup
 
 ### For Regular Use:
+
 ```
 1. Deploy to cloud (Render)
 2. Access from phone via URL
@@ -151,6 +166,7 @@ All features work perfectly on Android:
 ```
 
 ### For Testing:
+
 ```
 1. Run on PC
 2. Access via local network
@@ -165,34 +181,41 @@ All features work perfectly on Android:
 ### Can't Connect on Local Network:
 
 **Check WiFi:**
+
 - ✅ Phone and PC on same network
 - ✅ Not using mobile data on phone
 
 **Check Firewall:**
+
 - ✅ Windows Firewall allows port 3001
 - ✅ Router not blocking local connections
 
 **Check IP Address:**
+
 - ✅ Using correct PC IP (not 127.0.0.1)
 - ✅ Using http:// not https://
 
 **Verify Server:**
+
 - ✅ Console shows "Server running on port 3001"
 - ✅ Works on PC browser first
 
 ### App Not Loading:
 
 **Check URL:**
+
 - ✅ No typos in address
 - ✅ Correct port number (3001)
 - ✅ Using http:// not https://
 
 **Check Connection:**
+
 - ✅ Internet/WiFi connected
 - ✅ Server is running (for local)
 - ✅ Cloud deployment is live
 
 **Try Different Browser:**
+
 - Chrome (recommended)
 - Firefox
 - Samsung Internet
@@ -205,23 +228,27 @@ All features work perfectly on Android:
 ### How It Looks on Android:
 
 **Home Screen:**
+
 - Responsive grid layout
 - Easy navigation
 - Touch-friendly buttons
 
 **Chat Interface:**
+
 - Full-screen chat
 - Emoji support
 - Typing indicators
 - Smooth scrolling
 
 **Forum:**
+
 - Card-based layout
 - Easy reading
 - Quick posting
 - Like/Reply buttons
 
 **Resources:**
+
 - List view
 - Tap to expand
 - Click to call
@@ -266,10 +293,12 @@ All features work perfectly on Android:
 Average data consumption:
 
 **Initial Load:**
+
 - HTML/CSS/JS: ~100 KB
 - Total: ~150 KB
 
 **Per Session:**
+
 - Chat messages: ~10 KB
 - AI responses: ~5 KB/message
 - Forum posts: ~5 KB/post
@@ -303,6 +332,7 @@ Impress your professors:
 5. **Show it works everywhere!**
 
 **Talking Points:**
+
 - "Deployed on cloud platform"
 - "Accessible from any device"
 - "Mobile-responsive design"
@@ -314,14 +344,17 @@ Impress your professors:
 ## 📞 Need Help?
 
 **For cloud deployment:**
+
 - See `../cloud/DEPLOYMENT_GUIDE.md`
 
 **For local network:**
+
 - Google "How to find IP address Windows"
 - Check router settings
 - Use network scanner apps
 
 **For troubleshooting:**
+
 - Clear browser cache
 - Try different browser
 - Restart phone

@@ -3,20 +3,24 @@
 ## 📦 Available Packages
 
 ### 1. Portable Package (Recommended)
+
 **File:** `MentalHealthHub-Portable-v2.2.0.zip` (2.75 MB)
 
 **What's Included:**
+
 - Complete application with all dependencies
 - START.bat launcher
 - README.txt with instructions
 - All production node_modules
 
 **System Requirements:**
+
 - Windows 7/8/10/11 (64-bit)
 - Node.js 14.0.0 or higher
 - 50 MB free disk space
 
 **How to Use:**
+
 1. Extract the ZIP file anywhere
 2. Double-click `START.bat`
 3. Wait for "Server running on port 3001"
@@ -25,18 +29,22 @@
 ---
 
 ### 2. Standalone Executable
+
 **File:** `MentalHealthHub.exe` (39.78 MB)
 
 **What's Included:**
+
 - Node.js v18.5.0 runtime bundled
 - Application code embedded
 - All dependencies packaged
 
 **System Requirements:**
+
 - Windows 7/8/10/11 (64-bit only)
 - No Node.js installation needed!
 
 **How to Use:**
+
 1. Copy entire build folder
 2. Double-click `START_APP.bat`
 3. Or run `MentalHealthHub.exe` directly
@@ -48,9 +56,11 @@
 ## 🛠️ Development Tools
 
 ### create_portable.bat
+
 Rebuilds the portable package from source.
 
 **Usage:**
+
 ```cmd
 create_portable.bat
 ```
@@ -58,6 +68,7 @@ create_portable.bat
 Creates fresh `MentalHealthHub-Portable-v2.2.0.zip` with latest code.
 
 ### RUN_PORTABLE.bat
+
 Quick launcher for development testing.
 
 ---
@@ -67,6 +78,7 @@ Quick launcher for development testing.
 For end users who receive the package:
 
 ### Quick Start:
+
 1. **Download** the ZIP file
 2. **Extract** to any folder (e.g., Desktop, Documents)
 3. **Install Node.js** from https://nodejs.org/ (if not installed)
@@ -76,19 +88,23 @@ For end users who receive the package:
 ### Troubleshooting:
 
 **"Node is not recognized"**
+
 - Install Node.js from https://nodejs.org/
 - Restart your computer
 - Try again
 
 **"Port 3001 is already in use"**
+
 - Close other applications using the port
 - Or edit .env file and change PORT=3002
 
 **Firewall Warning**
+
 - Click "Allow access" when Windows Firewall asks
 - This allows local access only
 
 **Can't connect to localhost**
+
 - Make sure you see "Server running on port 3001" in console
 - Use http:// not https://
 - Try http://127.0.0.1:3001
@@ -98,7 +114,9 @@ For end users who receive the package:
 ## 🎯 Distribution
 
 ### For Academic Submission:
+
 Package as:
+
 ```
 YourName_MentalHealthHub/
 ├── Executable/
@@ -109,7 +127,9 @@ YourName_MentalHealthHub/
 ```
 
 ### For Friends/Testers:
+
 Just send:
+
 - `MentalHealthHub-Portable-v2.2.0.zip`
 - Brief instructions: "Extract and run START.bat"
 
@@ -118,6 +138,7 @@ Just send:
 ## 🔒 Security
 
 The portable package is safe:
+
 - ✅ No malware or viruses
 - ✅ Open source code
 - ✅ Standard Node.js packages
@@ -129,6 +150,7 @@ The portable package is safe:
 ## 📊 Package Contents
 
 **MentalHealthHub-Portable-v2.2.0.zip** contains:
+
 ```
 ├── START.bat                  # Easy launcher
 ├── README.txt                 # User instructions
@@ -152,11 +174,13 @@ The portable package is safe:
 ## ⚡ Performance
 
 **Portable Package:**
+
 - Startup time: 2-3 seconds
 - Memory usage: ~50-70 MB
 - Disk space: 15 MB extracted
 
 **Standalone EXE:**
+
 - Startup time: 3-5 seconds
 - Memory usage: ~80-100 MB
 - Disk space: 40 MB
@@ -166,6 +190,7 @@ The portable package is safe:
 ## 🎓 Academic Use
 
 Perfect for:
+
 - ✅ Project demonstrations
 - ✅ Semester submissions
 - ✅ Portfolio showcases
@@ -173,6 +198,7 @@ Perfect for:
 - ✅ Professor reviews
 
 **Presentation Tip:**
+
 1. Extract before presentation
 2. Run START.bat
 3. Open in browser
@@ -184,6 +210,7 @@ Perfect for:
 ## 📞 Support
 
 If users have issues:
+
 1. Check README.txt in the package
 2. Verify Node.js is installed
 3. Check Windows Firewall settings
