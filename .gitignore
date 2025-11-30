@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build files
+dist/
+build/
+
+# Generated PDFs and docs
+*.pdf
+*.docx
+
+# Temporary files
+.qodo/
+
+# Backup files
+*.old.js
+*.backup.html
+*.bak
+test.html
+index-test.html
+*-fixed.js

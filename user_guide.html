@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support Hub - User Guide</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 1in 1in 1in 1.5in;
+            padding: 0;
+        }
+        h1 {
+            font-size: 16pt;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 14pt;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .page-number {
+            position: fixed;
+            bottom: 0.5in;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10pt;
+        }
+        @page {
+            size: A4;
+            margin: 1in 1in 1in 1.5in;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mental Health Support Hub - User Guide</h1>
+
+    <h2>1. Introduction</h2>
+    <p>This guide provides step-by-step instructions on how to set up, run, and use the Mental Health Support Hub project in Visual Studio Code (VS Code). The project is a web-based application built with Node.js, Express.js, and Socket.io for real-time communication.</p>
+
+    <h2>2. Prerequisites</h2>
+    <p>Before running the project, ensure you have the following tools installed:</p>
+    <ul>
+        <li><strong>Node.js:</strong> Version 14 or higher. Download from <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+        <li><strong>Visual Studio Code:</strong> Download from <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+        <li><strong>Git:</strong> For version control. Download from <a href="https://git-scm.com/">https://git-scm.com/</a></li>
+        <li><strong>Chrome Browser:</strong> For testing the application</li>
+    </ul>
+
+    <h2>3. Project Setup</h2>
+    <ol>
+        <li>Open VS Code.</li>
+        <li>Click on "File" > "Open Folder" and select the "mental-health-hub" directory.</li>
+        <li>Open the integrated terminal in VS Code by pressing <code>Ctrl + `</code> (or View > Terminal).</li>
+        <li>Navigate to the project directory if not already there: <div class="code">cd mental-health-hub</div></li>
+        <li>Install the project dependencies: <div class="code">npm install</div></li>
+    </ol>
+
+    <h2>4. Running the Project</h2>
+    <ol>
+        <li>In the VS Code terminal, start the server: <div class="code">npm start</div></li>
+        <li>The server will start and display: "Mental Health Hub server running on port 3001"</li>
+        <li>Open your web browser and navigate to: <a href="http://localhost:3001">http://localhost:3001</a></li>
+        <li>The Mental Health Support Hub application will load.</li>
+    </ol>
+
+    <h2>5. Project Structure</h2>
+    <ul>
+        <li><strong>server.js:</strong> Main server file with Express setup and Socket.io integration</li>
+        <li><strong>public/:</strong> Directory containing frontend files
+            <ul>
+                <li><strong>index.html:</strong> Main HTML page</li>
+                <li><strong>styles.css:</strong> CSS styles for the application</li>
+                <li><strong>app.js:</strong> Client-side JavaScript for functionality</li>
+            </ul>
+        </li>
+        <li><strong>package.json:</strong> Project configuration and dependencies</li>
+        <li><strong>node_modules/:</strong> Installed dependencies (auto-generated)</li>
+    </ul>
+
+    <h2>6. Using the Application</h2>
+    <h3>Support Resources</h3>
+    <p>The Resources section displays available mental health support options, including crisis hotlines and therapy links.</p>
+
+    <h3>Anonymous Chat Support</h3>
+    <p>The Chat section allows users to send anonymous messages in real-time.</p>
+    <ol>
+        <li>Type your message in the input field.</li>
+        <li>Click "Send" or press Enter.</li>
+        <li>Messages will appear in the chat area.</li>
+    </ol>
+
+    <h3>Community Forum</h3>
+    <p>The Forum section allows users to post and view community messages.</p>
+    <ol>
+        <li>Enter a title and content for your post.</li>
+        <li>Click "Post".</li>
+        <li>Your post will appear at the top of the forum.</li>
+    </ol>
+
+    <h2>7. Development and Customization</h2>
+    <h3>Modifying Resources</h3>
+    <p>To add or modify support resources, edit the <code>resources</code> array in <code>server.js</code>.</p>
+
+    <h3>Styling Changes</h3>
+    <p>Modify <code>public/styles.css</code> to change the appearance of the application.</p>
+
+    <h3>Adding Features</h3>
+    <p>Extend functionality by editing <code>public/app.js</code> for frontend changes or <code>server.js</code> for backend changes.</p>
+
+    <h2>8. Troubleshooting</h2>
+    <ul>
+        <li><strong>Port already in use:</strong> Change the PORT in server.js or kill the process using the port.</li>
+        <li><strong>Dependencies not installing:</strong> Ensure Node.js and npm are properly installed. Try <code>npm cache clean --force</code> and reinstall.</li>
+        <li><strong>Page not loading:</strong> Check that the server is running and the URL is correct.</li>
+    </ul>
+
+    <h2>9. Additional Tools and Libraries Used</h2>
+    <ul>
+        <li><strong>Express.js:</strong> Web framework for Node.js</li>
+        <li><strong>Socket.io:</strong> Real-time bidirectional event-based communication</li>
+        <li><strong>Puppeteer:</strong> Used for generating PDFs and screenshots (in diagram generation scripts)</li>
+        <li><strong>Docx:</strong> Library for creating Word documents</li>
+        <li><strong>Mermaid:</strong> For generating diagrams</li>
+    </ul>
+
+    <h2>10. Deployment</h2>
+    <p>For production deployment:</p>
+    <ol>
+        <li>Set the PORT environment variable: <div class="code">export PORT=3001</div></li>
+        <li>Use a process manager like PM2: <div class="code">npm install -g pm2 && pm2 start server.js</div></li>
+        <li>Consider using a reverse proxy like Nginx for production.</li>
+    </ol>
+
+    <div class="page-number">Page 1 of 3</div>
+</body>
+</html>
