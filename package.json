@@ -7,7 +7,20 @@
     "start": "node server.js",
     "dev": "node server.js",
     "test": "echo \"No tests specified yet\"",
-    "lint": "echo \"No linting configured yet\""
+    "lint": "echo \"No linting configured yet\"",
+    "build": "pkg launcher.js --targets node18-win-x64 --output build/MentalHealthHub.exe"
+  },
+  "bin": "launcher.js",
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "server.js",
+      "aiService.js"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "build"
   },
   "keywords": [
     "mental-health",
