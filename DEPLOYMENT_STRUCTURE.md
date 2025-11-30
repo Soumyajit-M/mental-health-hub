@@ -55,6 +55,7 @@ mental-health-hub/
 ## 🎯 Quick Access Guide
 
 ### For Windows Users:
+
 ```
 📍 Location: deployment/windows/
 📦 File: MentalHealthHub-Portable-v2.2.0.zip
@@ -62,6 +63,7 @@ mental-health-hub/
 ```
 
 ### For Android Users:
+
 ```
 📍 Location: deployment/android-web/
 📱 Guide: MOBILE_ACCESS.md
@@ -69,6 +71,7 @@ mental-health-hub/
 ```
 
 ### For Cloud Deployment:
+
 ```
 📍 Location: deployment/cloud/
 📄 Files: Procfile, vercel.json
@@ -79,30 +82,33 @@ mental-health-hub/
 
 ## 📊 Deployment Options Summary
 
-| Platform | Location | Size | Requirements |
-|----------|----------|------|--------------|
-| **Windows Portable** | `deployment/windows/*.zip` | 2.75 MB | Node.js |
-| **Windows EXE** | `deployment/windows/*.exe` | 39.78 MB | None |
-| **Android Web** | Deploy via cloud | N/A | Browser |
-| **Cloud (Render)** | `deployment/cloud/` | N/A | Internet |
+| Platform             | Location                   | Size     | Requirements |
+| -------------------- | -------------------------- | -------- | ------------ |
+| **Windows Portable** | `deployment/windows/*.zip` | 2.75 MB  | Node.js      |
+| **Windows EXE**      | `deployment/windows/*.exe` | 39.78 MB | None         |
+| **Android Web**      | Deploy via cloud           | N/A      | Browser      |
+| **Cloud (Render)**   | `deployment/cloud/`        | N/A      | Internet     |
 
 ---
 
 ## 🚀 Quick Start Per Platform
 
 ### Windows (Portable):
+
 1. Go to `deployment/windows/`
 2. Extract `MentalHealthHub-Portable-v2.2.0.zip`
 3. Run `START.bat`
 4. Open http://localhost:3001
 
 ### Android/Mobile:
+
 1. Read `deployment/android-web/README.md`
 2. Deploy to cloud (see cloud guide)
 3. Access via URL on phone
 4. Add to home screen
 
 ### Cloud Deployment:
+
 1. Check `deployment/cloud/DEPLOYMENT_GUIDE.md`
 2. Sign up at https://render.com
 3. Deploy in 5 minutes
@@ -113,17 +119,20 @@ mental-health-hub/
 ## 📝 What Each Folder Contains
 
 ### deployment/windows/
+
 - ✅ Portable ZIP package (recommended)
 - ✅ Standalone EXE file
 - ✅ Build scripts
 - ✅ README with instructions
 
 ### deployment/android-web/
+
 - ✅ Mobile access guide
 - ✅ Local network setup
 - ✅ Cloud deployment reference
 
 ### deployment/cloud/
+
 - ✅ Platform config files
 - ✅ Deployment guides
 - ✅ Environment setup
@@ -142,6 +151,7 @@ Repository: https://github.com/Soumyajit-M/mental-health-hub
 ## 🎓 For Academic Submission
 
 **Recommended Package:**
+
 ```
 1. Source Code (GitHub repository)
 2. Windows Executable (deployment/windows/*.zip)
